@@ -1,0 +1,137 @@
+body {
+  background: var(--light-grayish-violet);
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-direito {
+  position: absolute;
+  top: 0;
+  left: -120px;
+  width: 420px;
+  height: 475px;
+  background: linear-gradient(180deg,  var(--light-magenta) 0.95%, var(--light-violet) 25.97%);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.bg-esquerdo {
+  position: absolute;
+  bottom: 0;
+  right: -120px;
+  width: 420px;
+  height: 475px;
+  background: hsl(270deg 91% 91% / 30%);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+div.conteudo-principal{
+  width: 780px;
+  height: 435px;
+  background: transparent;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.conteudo-principal .banner {
+  height: 100%;
+  width: 30%;
+  background: var(--light-grayish-violet);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  position: relative;
+  box-shadow: 5px 5px 30px #6249498f;
+}
+
+div.conteudo-principal .banner .espaco-camera {
+  background: var(--light-grayish-violet);
+  height: 30px;
+  width: 142px;
+  position: absolute;
+  top: 0;
+  border-radius: 12px;
+}
+
+div.conteudo-principal .banner .display{
+  background: blue;
+  border-radius: 24px;
+  width: 94%;
+  height: 96%;
+  overflow: hidden;
+}
+
+div.conteudo-principal .banner .display .perfil {
+  width: 100%;
+  height: 65px;
+  background: linear-gradient(68.15deg, var(--light-violet) 16.62%, var(--light-magenta) 85.61%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px;
+  padding-top: 22px;
+}
+
+div.conteudo-principal .banner .display .perfil span {
+  color: var(--light-grayish-violet);
+}
+
+div.conteudo-principal .banner .display .perfil div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40px;
+}
+
+div.conteudo-principal .banner .display .perfil div img {
+  width: 32px;
+  border-radius: 50%;
+  border: solid 1.2px var(--light-grayish-violet);
+}
+
+div.conteudo-principal .banner .display .perfil div div.status {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+}
+
+div.conteudo-principal .banner .display .perfil div div.status h2 {
+  color: var(--light-grayish-violet);
+  font-weight: 700;
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+div.conteudo-principal .banner .display .perfil div div.status p {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  font-size: 8px;
+  align-self: flex-start;
+}
+
+div.conteudo-principal .texto {
+  width: 57%;
+}
+
+div.conteudo-principal .texto h1 {
+  font-weight: 500;
+  color: var(--very-dark-desaturated-violet);
+  font-size: 36px;
+  margin-bottom: 22px;
+}
+
+div.conteudo-principal .texto p {
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--dark-rayish-violet);
+  font-size: 16px;
+}
