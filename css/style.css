@@ -14,7 +14,7 @@ body {
   left: -120px;
   width: 420px;
   height: 475px;
-  background: linear-gradient(180deg,  var(--light-magenta) 0.95%, var(--light-violet) 25.97%);
+  background: var(--light-violet);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
@@ -40,10 +40,28 @@ div.conteudo-principal{
   justify-content: space-between;
 }
 
+div.conteudo-principal .texto {
+  width: 57%;
+}
+
+div.conteudo-principal .texto h1 {
+  font-weight: 500;
+  color: var(--very-dark-desaturated-violet);
+  font-size: 36px;
+  margin-bottom: 22px;
+}
+
+div.conteudo-principal .texto p {
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--dark-rayish-violet);
+  font-size: 16px;
+}
+
 div.conteudo-principal .banner {
   height: 100%;
   width: 30%;
-  background: var(--light-grayish-violet);
+  background: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +71,7 @@ div.conteudo-principal .banner {
 }
 
 div.conteudo-principal .banner .espaco-camera {
-  background: var(--light-grayish-violet);
+  background: var(--white);
   height: 30px;
   width: 142px;
   position: absolute;
@@ -62,7 +80,7 @@ div.conteudo-principal .banner .espaco-camera {
 }
 
 div.conteudo-principal .banner .display{
-  background: blue;
+  background: var(--light-grayish-violet);
   border-radius: 24px;
   width: 94%;
   height: 96%;
@@ -118,20 +136,87 @@ div.conteudo-principal .banner .display .perfil div div.status p {
   align-self: flex-start;
 }
 
-div.conteudo-principal .texto {
-  width: 57%;
+div.conteudo-principal .banner .display .chat {
+  background: transparent;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
 }
 
-div.conteudo-principal .texto h1 {
-  font-weight: 500;
-  color: var(--very-dark-desaturated-violet);
-  font-size: 36px;
-  margin-bottom: 22px;
+div.conteudo-principal .banner .display .chat .msg {
+  background: hsl(270deg 61% 80% / 26%);
+  width: 75%;
+  padding: 4px 10px;
+  border-radius: 8px 8px 8px 4px;
+  margin-bottom: 4px;
 }
 
-div.conteudo-principal .texto p {
+div.conteudo-principal .banner .display .chat .msg p {
+  color: var(--moderate-violet);
+  font-size: 8px;
   font-weight: 400;
-  line-height: 22px;
-  color: var(--dark-rayish-violet);
-  font-size: 16px;
+  line-height: 12px;
+}
+
+div.conteudo-principal .banner .display .chat ul.lista {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  align-self: end;
+  margin: 6px 0;
+}
+
+div.conteudo-principal .banner .display .chat ul.lista li {
+  width: 30%;
+  list-style: none;
+}
+
+div.conteudo-principal .banner .display .chat ul.lista li img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+div.conteudo-principal .banner .display .chat .resposta {
+  background: var(--white);
+  width: 75%;
+  padding: 4px 10px;
+  border-radius: 8px 8px 4px 8px;
+  margin-bottom: 4px;
+  align-self: flex-end;
+  box-shadow: 0px 3.5px 1px #e3d3d34a;
+}
+
+div.conteudo-principal .banner .display .chat .resposta p {
+  color: var(--very-dark-desaturated-violet);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+div.conteudo-principal .banner .display .chat ul.opcoes li {
+  display: flex;
+  background: linear-gradient(270deg, var(--light-violet) 16.62%, var(--light-magenta) 85.61%);
+  width: 85%;
+  padding: 4px 10px;
+  border-radius: 8px 8px 8px 4px;
+  margin-bottom: 4px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.conteudo-principal .banner .display .chat ul.opcoes li span {
+  color: var(--light-grayish-violet);
+}
+
+div.conteudo-principal .banner .display .chat ul.opcoes li p {
+  color: var(--grayish-blue);
+  font-size: 9px;
+  font-weight: 500;
+  justify-self: flex-start;
+}
+
+div.conteudo-principal .banner .display .chat ul.opcoes li h3 {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
 }
