@@ -253,3 +253,34 @@ div.conteudo-principal .banner .display .chat div.campo-texto span.enviar {
   margin-right: 3px;
   width: 26px;
 }
+
+@media screen and (max-width: 425px){
+
+  div.bg-direito {
+    left: -245px;
+  }
+
+  div.bg-esquerdo {
+    display: none;
+  }
+
+  div.conteudo-principal {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  div.conteudo-principal .banner {
+    width: 55%;
+  }
+
+  div.conteudo-principal .texto {
+    width: 73%;
+    text-align: center;
+    margin-top: 36px;
+  }
+
+  div.conteudo-principal .texto p {
+    margin-bottom: 64px;
+  }
+  
+}
