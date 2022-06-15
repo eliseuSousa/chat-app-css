@@ -201,7 +201,6 @@ div.conteudo-principal .banner .display .chat ul.opcoes li {
   border-radius: 8px 8px 8px 4px;
   margin-bottom: 4px;
   align-items: center;
-  justify-content: space-between;
 }
 
 div.conteudo-principal .banner .display .chat ul.opcoes li span {
@@ -212,11 +211,45 @@ div.conteudo-principal .banner .display .chat ul.opcoes li p {
   color: var(--grayish-blue);
   font-size: 9px;
   font-weight: 500;
-  justify-self: flex-start;
+  margin-left: 12px;
+  margin-right: 32px;
+  min-width: 67px;
 }
 
 div.conteudo-principal .banner .display .chat ul.opcoes li h3 {
   color: var(--white);
   font-size: 14px;
   font-weight: 700;
+}
+
+div.conteudo-principal .banner .display .chat div.campo-texto {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  margin-top: 2px;
+  width: 100%;
+}
+
+div.conteudo-principal .banner .display .chat div.campo-texto span.type-message {
+  color: var(--dark-rayish-violet);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  margin-left: 24px;
+}
+
+div.conteudo-principal .banner .display .chat div.campo-texto span.enviar {
+  align-items: center;
+  background-color: var(--very-dark-desaturated-violet);
+  border-radius: 50%;
+  color: var(--white);
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  padding: 3px;
+  margin-right: 3px;
+  width: 26px;
 }
